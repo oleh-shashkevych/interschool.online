@@ -1,0 +1,63 @@
+.io-purple-main {
+    color: var(--io-purple-main) !important;
+}
+
+.io-purple-secondary {
+    color: var(--io-purple-secondary) !important;
+}
+
+.io-purple-hover {
+    color: var(--io-purple-hover) !important;
+}
+
+.io-pink-main {
+    color: var(--io-pink-main) !important;
+}
+
+.io-pink-secondary {
+    color: var(--io-pink-secondary) !important;
+}
+
+.io-pink-thirdly {
+    color: var(--io-pink-thirdly) !important;
+}
+
+.io-green-main {
+    color: var(--io-green-main) !important;
+}
+
+.io-green-secondary {
+    color: var(--io-green-secondary) !important;
+}
+
+.io-orange-main {
+    color: var(--io-orange-main) !important;
+}
+
+.io-orange-secondary {
+    color: var(--io-orange-secondary) !important;
+}
+
+.io-black-main {
+    color: var(--io-black-main) !important;
+}
+
+.io-black-main-op-60 {
+    color: var(--io-black-main-op-60);
+}
+
+.io-white-main {
+    color: var(--io-white-main) !important;
+}
+
+.io-white-secondary {
+    color: var(--io-white-secondary) !important;
+}
+
+.io-background {
+    color: var(--io-background) !important;
+}
+
+.io-background-purple {
+    color: var(--io-background-purple) !important;
+}

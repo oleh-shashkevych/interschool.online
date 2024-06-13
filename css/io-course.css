@@ -1,0 +1,637 @@
+/* Single Course Hero */
+.io-course-hero {
+    margin-bottom: var(--io-size-500);
+}
+
+.io-course-hero__heading {
+    margin-bottom: var(--io-size-100);
+    /* text-transform: capitalize; */
+}
+
+.io-course-hero__text {
+    font-size: 21px;
+}
+
+.io-course-options {
+    width: 100%;
+    max-width: 440px;
+}
+
+.io-course-options.io-intersection {
+    margin-bottom: var(--io-size-550);
+}
+
+.io-course-hero__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: var(--io-size-150);
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    padding: var(--io-size-150);
+    border-radius: var(--io-size-050);
+    border: 1px solid var(--io-white-secondary);
+    background: var(--io-white-main);
+}
+
+/* Single Course Lesson */
+.io-course-lesson {
+    padding-top: var(--io-size-100);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+}
+
+/* Course Price */
+.io-course-price {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-300);
+    padding-top: var(--io-size-100);
+}
+
+/* Course Gallery */
+.io-course-gallery {
+    padding-top: var(--io-size-100);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+}
+
+.io-course-lectors {
+    padding-top: var(--io-size-100);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+}
+
+.io-course-lectors__text-wrapper {
+    padding-right: var(--io-size-150);
+}
+
+.io-course-lectors__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-150);
+}
+
+.io-course-lectors__item-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-150);
+}
+
+.io-course-lectors__item-header-photo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.io-course-lectors__item-header-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.io-course-lectors__item-header-photo::after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -o-linear-gradient(91deg, rgba(122, 97, 255, .5) 0%, rgba(122, 97, 255, 0.00) 33%);
+    background: linear-gradient(359deg, rgba(122, 97, 255, .5) 0%, rgba(122, 97, 255, 0.00) 33%);
+    z-index: 5;
+}
+
+.io-course-lectors__item-header-text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-050);
+
+}
+
+.io-course-lectors__item-header-text-name {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--io-purple-main);
+}
+
+.io-course-lectors__item-header-text-work {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--io-black-main-op-60);
+}
+
+/* Programs Course */
+.io-course-programs {
+    padding-top: var(--io-size-100);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+}
+
+.io-course-programs__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 240px var(--io-size-100) 1fr;
+    grid-template-columns: 240px 1fr;
+    gap: var(--io-size-100);
+}
+
+.io-course-programs__inner {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 240px var(--io-size-100) 1fr;
+    grid-template-columns: 240px 1fr;
+    gap: var(--io-size-100);
+    border: 1px solid;
+    border-radius: var(--io-size-050);
+    overflow: hidden;
+}
+
+.io-course-programs__inner--preschool {
+    border-color: var(--io-black-main-op-60);
+}
+
+.io-course-programs__inner--light {
+    border-color: var(--io-orange-main);
+}
+
+.io-course-programs__inner--medium {
+    border-color: var(--io-green-main);
+}
+
+.io-course-programs__inner--hard {
+    border-color: var(--io-pink-main);
+}
+
+.io-course-programs__title {
+    padding: var(--io-size-050);
+    color: var(--io-purple-main);
+    background-color: var(--io-purple-secondary);
+    border-radius: var(--io-size-025);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.io-course-programs__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: var(--io-size-100);
+    padding: var(--io-size-100) 0 var(--io-size-100) var(--io-size-100);
+    /* border: 1px solid; */
+    border-radius: var(--io-size-050);
+}
+
+.io-course-programs__data--preschool {
+    /* border-color: var(--io-white-secondary); */
+    color: var(--io-black-main-op-60);
+}
+
+.io-course-programs__data--light {
+    /* border-color: var(--io-orange-main); */
+    color: var(--io-orange-main);
+}
+
+.io-course-programs__data--medium {
+    /* border-color: var(--io-green-main); */
+    color: var(--io-green-main);
+}
+
+.io-course-programs__data--hard {
+    /* border-color: var(--io-pink-main); */
+    color: var(--io-pink-main);
+}
+
+.io-course-programs__data-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-100);
+}
+
+.io-course-programs__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: var(--io-size-075);
+}
+
+.io-course-programs__name img {
+    width: 18px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.io-course-programs__name span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.io-course-programs__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-100);
+    margin: var(--io-size-100) var(--io-size-100) var(--io-size-100) 0;
+    padding: var(--io-size-075);
+    background-color: var(--io-white-main);
+    border-radius: var(--io-size-050);
+}
+
+.io-course-programs__content--preschool {
+    background-color: var(--io-grey-main);
+}
+
+.io-course-programs__content--light {
+    background-color: var(--io-orange-secondary);
+}
+
+.io-course-programs__content--medium {
+    background-color: var(--io-green-secondary);
+}
+
+.io-course-programs__content--hard {
+    background-color: var(--io-pink-thirdly);
+}
+
+.io-course-programs__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-050);
+}
+
+.io-course-programs__item>span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: var(--io-size-150);
+    height: var(--io-size-150);
+    border: 1px solid;
+    border-radius: 50%;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.io-course-programs__content--preschool .io-course-programs__item>span {
+    border-color: var(--io-black-main-op-60);
+    color: var(--io-black-main-op-60);
+    font-size: 12px;
+}
+
+.io-course-programs__content--light .io-course-programs__item>span {
+    border-color: var(--io-orange-main);
+    color: var(--io-orange-main);
+}
+
+.io-course-programs__content--medium .io-course-programs__item>span {
+    border-color: var(--io-green-main);
+    color: var(--io-green-main);
+}
+
+.io-course-programs__content--hard .io-course-programs__item>span {
+    border-color: var(--io-pink-main);
+    color: var(--io-pink-main);
+}
+
+.io-course-programs__diploma {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: var(--io-size-050);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-050);
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    background-color: var(--io-grey-main);
+    border: none;
+    border-radius: var(--io-size-025);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--io-black-main-op-60);
+    text-decoration: none;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-course-programs__diploma span {
+    font-weight: 600;
+}
+
+.io-course-programs__diploma::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.6 0.553711H0.4C0.1791 0.553711 0 0.732811 0 0.953711V16.9537C0 17.1746 0.1791 17.3537 0.4 17.3537H7.6228C7.6348 17.4869 7.6544 17.6181 7.678 17.7481L5.484 20.3629C5.3419 20.5321 5.36385 20.7844 5.533 20.9265C5.58065 20.9665 5.63705 20.9949 5.6976 21.0093L8.1128 21.5861L9.1004 23.8661C9.1882 24.0688 9.4237 24.162 9.6264 24.0742C9.6835 24.0495 9.734 24.0118 9.774 23.9641L11.9644 21.3537C11.9764 21.3537 11.988 21.3537 12 21.3537C12.012 21.3537 12.0236 21.3537 12.0356 21.3537L14.226 23.9641C14.3679 24.1334 14.6202 24.1556 14.7895 24.0137C14.8372 23.9738 14.8749 23.9232 14.8996 23.8661L15.8872 21.5861L18.3024 21.0093C18.5173 20.9581 18.65 20.7424 18.5989 20.5275C18.5844 20.467 18.5561 20.4106 18.516 20.3629L16.322 17.7481C16.3456 17.6181 16.3652 17.4869 16.3772 17.3537H23.6C23.8209 17.3537 24 17.1746 24 16.9537V0.953711C24 0.732761 23.8209 0.553711 23.6 0.553711ZM9.5772 22.9537L8.7672 21.0857C8.71715 20.9702 8.61565 20.885 8.4932 20.8557L6.5132 20.3825L7.9492 18.6709C7.9568 18.6885 7.9668 18.7045 7.9744 18.7221C8.0264 18.8421 8.0828 18.9561 8.1452 19.0693C8.1708 19.1165 8.198 19.1629 8.2252 19.2089C8.28015 19.3004 8.33825 19.39 8.3996 19.4777C8.4424 19.5389 8.4872 19.5977 8.5332 19.6577C8.5868 19.7257 8.642 19.7921 8.7 19.8577C8.758 19.9233 8.8256 19.9957 8.8924 20.0621C8.9416 20.1113 8.9924 20.1589 9.0444 20.2057C9.0876 20.2457 9.1264 20.2877 9.1716 20.3257C9.2168 20.3637 9.2592 20.3893 9.3024 20.4229C9.322 20.4381 9.3388 20.4557 9.3588 20.4705C9.3948 20.4977 9.4328 20.5213 9.4696 20.5473C9.5272 20.5873 9.584 20.6305 9.6436 20.6673C9.7572 20.7401 9.8744 20.8065 9.9932 20.8673C10.0388 20.8905 10.0852 20.9117 10.1316 20.9333C10.2383 20.9835 10.3456 21.0291 10.4536 21.0701C10.4848 21.0817 10.5156 21.0949 10.5468 21.1057C10.6983 21.159 10.8527 21.2037 11.0092 21.2397L11.0136 21.2409L9.5772 22.9537ZM12.7512 20.4689C12.5677 20.5077 12.3816 20.5322 12.1944 20.5421H12.1892C12.126 20.5453 12.0628 20.5497 11.9992 20.5497C11.9356 20.5497 11.8724 20.5453 11.8092 20.5421H11.804C11.6172 20.5321 11.4314 20.5078 11.2484 20.4693L11.2148 20.4625C11.1436 20.4469 11.0732 20.4277 11.0036 20.4077C10.9744 20.3993 10.9448 20.3917 10.916 20.3825C10.866 20.3669 10.8168 20.3485 10.7676 20.3309C10.7184 20.3133 10.6716 20.2961 10.6244 20.2765C10.5952 20.2641 10.5664 20.2509 10.5376 20.2365C10.472 20.2069 10.4068 20.1769 10.3432 20.1437L10.3112 20.1261C10.1463 20.0379 9.9885 19.9371 9.8392 19.8245C9.756 19.7625 9.6792 19.6941 9.6036 19.6265C9.5142 19.5468 9.42885 19.4625 9.348 19.3741C9.316 19.3397 9.2816 19.3069 9.2512 19.2713C9.1395 19.1399 9.0376 19.0005 8.9464 18.8541C8.9328 18.8325 8.9212 18.8097 8.9064 18.7873C8.82135 18.6452 8.7465 18.4972 8.6824 18.3445C8.6768 18.3309 8.6704 18.3173 8.6652 18.3045C8.59435 18.1295 8.53735 17.9493 8.4948 17.7653C8.4948 17.7581 8.4892 17.7525 8.4872 17.7453C8.4291 17.4855 8.39985 17.22 8.4 16.9537C8.3988 14.9655 10.0096 13.3528 11.9978 13.3515C13.986 13.3503 15.5988 14.9611 15.6 16.9493C15.6002 17.2186 15.5701 17.4871 15.5104 17.7497C15.5084 17.7565 15.5044 17.7625 15.5028 17.7693C15.4603 17.953 15.4035 18.1332 15.3328 18.3081C15.3272 18.3221 15.3208 18.3361 15.3148 18.3481C15.2509 18.4998 15.1763 18.6469 15.0916 18.7881C15.0784 18.8105 15.0664 18.8341 15.0516 18.8565C14.9604 19.0026 14.8587 19.1419 14.7472 19.2733C14.7172 19.3085 14.6832 19.3405 14.6516 19.3749C14.5697 19.4641 14.4832 19.5491 14.3928 19.6297C14.3168 19.6973 14.2412 19.7657 14.1584 19.8273C14.0756 19.8889 14.0016 19.9409 13.9208 19.9925L13.916 19.9953C13.8436 20.0413 13.7696 20.0837 13.6944 20.1237C13.6796 20.1317 13.6652 20.1401 13.6504 20.1477C13.59 20.1793 13.5304 20.2077 13.4668 20.2353C13.4348 20.2497 13.4032 20.2645 13.3708 20.2777C13.326 20.2965 13.2804 20.3129 13.2348 20.3293C13.1892 20.3457 13.1328 20.3669 13.0808 20.3829C13.0532 20.3917 13.0252 20.3993 12.9972 20.4073C12.9264 20.4273 12.8552 20.4473 12.7832 20.4625L12.7512 20.4689ZM17.4868 20.3813L15.5068 20.8545C15.3843 20.8838 15.2829 20.969 15.2328 21.0845L14.4228 22.9537L12.9864 21.2421H12.99C13.1471 21.2062 13.302 21.1614 13.454 21.1077C13.484 21.0973 13.5128 21.0849 13.5428 21.0741C13.6544 21.0317 13.7644 20.9853 13.8724 20.9337C13.9164 20.9133 13.9604 20.8937 14.0036 20.8713C14.1236 20.8089 14.2436 20.7413 14.3588 20.6673C14.4144 20.6321 14.4676 20.5925 14.5216 20.5545C14.5616 20.5269 14.6016 20.5017 14.6416 20.4725C14.6628 20.4565 14.6816 20.4377 14.7024 20.4213C14.7424 20.3885 14.7888 20.3609 14.8296 20.3265C14.8704 20.2921 14.912 20.2465 14.9544 20.2089C15.0072 20.1609 15.0592 20.1125 15.1096 20.0625C15.1754 19.9967 15.2392 19.9289 15.3008 19.8593C15.3588 19.7937 15.414 19.7273 15.468 19.6593C15.514 19.6005 15.5588 19.5393 15.6016 19.4793C15.6632 19.3921 15.7216 19.3025 15.7756 19.2113C15.8036 19.1649 15.8308 19.1181 15.8556 19.0705C15.9178 18.9577 15.9744 18.8424 16.0256 18.7245C16.0328 18.7041 16.0432 18.6877 16.0508 18.6697L17.4868 20.3813ZM23.2 16.5537H16.3796C16.1625 14.1347 14.0255 12.3497 11.6066 12.5668C9.48835 12.7569 7.8097 14.4355 7.6196 16.5537H0.8V1.35371H23.2V16.5537Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M2 2.15371C1.7791 2.15371 1.6 2.33281 1.6 2.55371V4.15371H2.4V2.95371H3.6V2.15371H2Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M22 2.15371H20.4V2.95371H21.6V4.15371H22.4V2.55371C22.4 2.33276 22.2209 2.15371 22 2.15371Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M21.6 13.7537V14.9537H20.4V15.7537H22C22.2209 15.7537 22.4 15.5746 22.4 15.3537V13.7537H21.6Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M2.4 14.9537V13.7537H1.6V15.3537C1.6 15.5746 1.7791 15.7537 2 15.7537H3.6V14.9537H2.4Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M16.8 4.95371H7.2V5.75371H16.8V4.95371Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M19.2 7.35371H4.8V8.15371H19.2V7.35371Z' fill='black' fill-opacity='0.6'/%3E%3Cpath d='M12 14.1537C10.4536 14.1537 9.2 15.4073 9.2 16.9537C9.20175 18.4994 10.4544 19.752 12 19.7537C13.5464 19.7537 14.8 18.5001 14.8 16.9537C14.8 15.4073 13.5464 14.1537 12 14.1537ZM12 18.9537C10.8955 18.9537 10 18.0583 10 16.9537C10.0013 15.8497 10.896 14.955 12 14.9537C13.1046 14.9537 14 15.8492 14 16.9537C14 18.0583 13.1046 18.9537 12 18.9537Z' fill='black' fill-opacity='0.6'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-course-programs__diploma:hover {
+    background-color: var(--io-purple-secondary);
+    color: var(--io-purple-main);
+}
+
+.io-course-programs__diploma:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.6 0.553711H0.4C0.1791 0.553711 0 0.732811 0 0.953711V16.9537C0 17.1746 0.1791 17.3537 0.4 17.3537H7.6228C7.6348 17.4869 7.6544 17.6181 7.678 17.7481L5.484 20.3629C5.3419 20.5321 5.36385 20.7844 5.533 20.9265C5.58065 20.9665 5.63705 20.9949 5.6976 21.0093L8.1128 21.5861L9.1004 23.8661C9.1882 24.0688 9.4237 24.162 9.6264 24.0742C9.6835 24.0495 9.734 24.0118 9.774 23.9641L11.9644 21.3537C11.9764 21.3537 11.988 21.3537 12 21.3537C12.012 21.3537 12.0236 21.3537 12.0356 21.3537L14.226 23.9641C14.3679 24.1334 14.6202 24.1556 14.7895 24.0137C14.8372 23.9738 14.8749 23.9232 14.8996 23.8661L15.8872 21.5861L18.3024 21.0093C18.5173 20.9581 18.65 20.7424 18.5989 20.5275C18.5844 20.467 18.5561 20.4106 18.516 20.3629L16.322 17.7481C16.3456 17.6181 16.3652 17.4869 16.3772 17.3537H23.6C23.8209 17.3537 24 17.1746 24 16.9537V0.953711C24 0.732761 23.8209 0.553711 23.6 0.553711ZM9.5772 22.9537L8.7672 21.0857C8.71715 20.9702 8.61565 20.885 8.4932 20.8557L6.5132 20.3825L7.9492 18.6709C7.9568 18.6885 7.9668 18.7045 7.9744 18.7221C8.0264 18.8421 8.0828 18.9561 8.1452 19.0693C8.1708 19.1165 8.198 19.1629 8.2252 19.2089C8.28015 19.3004 8.33825 19.39 8.3996 19.4777C8.4424 19.5389 8.4872 19.5977 8.5332 19.6577C8.5868 19.7257 8.642 19.7921 8.7 19.8577C8.758 19.9233 8.8256 19.9957 8.8924 20.0621C8.9416 20.1113 8.9924 20.1589 9.0444 20.2057C9.0876 20.2457 9.1264 20.2877 9.1716 20.3257C9.2168 20.3637 9.2592 20.3893 9.3024 20.4229C9.322 20.4381 9.3388 20.4557 9.3588 20.4705C9.3948 20.4977 9.4328 20.5213 9.4696 20.5473C9.5272 20.5873 9.584 20.6305 9.6436 20.6673C9.7572 20.7401 9.8744 20.8065 9.9932 20.8673C10.0388 20.8905 10.0852 20.9117 10.1316 20.9333C10.2383 20.9835 10.3456 21.0291 10.4536 21.0701C10.4848 21.0817 10.5156 21.0949 10.5468 21.1057C10.6983 21.159 10.8527 21.2037 11.0092 21.2397L11.0136 21.2409L9.5772 22.9537ZM12.7512 20.4689C12.5677 20.5077 12.3816 20.5322 12.1944 20.5421H12.1892C12.126 20.5453 12.0628 20.5497 11.9992 20.5497C11.9356 20.5497 11.8724 20.5453 11.8092 20.5421H11.804C11.6172 20.5321 11.4314 20.5078 11.2484 20.4693L11.2148 20.4625C11.1436 20.4469 11.0732 20.4277 11.0036 20.4077C10.9744 20.3993 10.9448 20.3917 10.916 20.3825C10.866 20.3669 10.8168 20.3485 10.7676 20.3309C10.7184 20.3133 10.6716 20.2961 10.6244 20.2765C10.5952 20.2641 10.5664 20.2509 10.5376 20.2365C10.472 20.2069 10.4068 20.1769 10.3432 20.1437L10.3112 20.1261C10.1463 20.0379 9.9885 19.9371 9.8392 19.8245C9.756 19.7625 9.6792 19.6941 9.6036 19.6265C9.5142 19.5468 9.42885 19.4625 9.348 19.3741C9.316 19.3397 9.2816 19.3069 9.2512 19.2713C9.1395 19.1399 9.0376 19.0005 8.9464 18.8541C8.9328 18.8325 8.9212 18.8097 8.9064 18.7873C8.82135 18.6452 8.7465 18.4972 8.6824 18.3445C8.6768 18.3309 8.6704 18.3173 8.6652 18.3045C8.59435 18.1295 8.53735 17.9493 8.4948 17.7653C8.4948 17.7581 8.4892 17.7525 8.4872 17.7453C8.4291 17.4855 8.39985 17.22 8.4 16.9537C8.3988 14.9655 10.0096 13.3528 11.9978 13.3515C13.986 13.3503 15.5988 14.9611 15.6 16.9493C15.6002 17.2186 15.5701 17.4871 15.5104 17.7497C15.5084 17.7565 15.5044 17.7625 15.5028 17.7693C15.4603 17.953 15.4035 18.1332 15.3328 18.3081C15.3272 18.3221 15.3208 18.3361 15.3148 18.3481C15.2509 18.4998 15.1763 18.6469 15.0916 18.7881C15.0784 18.8105 15.0664 18.8341 15.0516 18.8565C14.9604 19.0026 14.8587 19.1419 14.7472 19.2733C14.7172 19.3085 14.6832 19.3405 14.6516 19.3749C14.5697 19.4641 14.4832 19.5491 14.3928 19.6297C14.3168 19.6973 14.2412 19.7657 14.1584 19.8273C14.0756 19.8889 14.0016 19.9409 13.9208 19.9925L13.916 19.9953C13.8436 20.0413 13.7696 20.0837 13.6944 20.1237C13.6796 20.1317 13.6652 20.1401 13.6504 20.1477C13.59 20.1793 13.5304 20.2077 13.4668 20.2353C13.4348 20.2497 13.4032 20.2645 13.3708 20.2777C13.326 20.2965 13.2804 20.3129 13.2348 20.3293C13.1892 20.3457 13.1328 20.3669 13.0808 20.3829C13.0532 20.3917 13.0252 20.3993 12.9972 20.4073C12.9264 20.4273 12.8552 20.4473 12.7832 20.4625L12.7512 20.4689ZM17.4868 20.3813L15.5068 20.8545C15.3843 20.8838 15.2829 20.969 15.2328 21.0845L14.4228 22.9537L12.9864 21.2421H12.99C13.1471 21.2062 13.302 21.1614 13.454 21.1077C13.484 21.0973 13.5128 21.0849 13.5428 21.0741C13.6544 21.0317 13.7644 20.9853 13.8724 20.9337C13.9164 20.9133 13.9604 20.8937 14.0036 20.8713C14.1236 20.8089 14.2436 20.7413 14.3588 20.6673C14.4144 20.6321 14.4676 20.5925 14.5216 20.5545C14.5616 20.5269 14.6016 20.5017 14.6416 20.4725C14.6628 20.4565 14.6816 20.4377 14.7024 20.4213C14.7424 20.3885 14.7888 20.3609 14.8296 20.3265C14.8704 20.2921 14.912 20.2465 14.9544 20.2089C15.0072 20.1609 15.0592 20.1125 15.1096 20.0625C15.1754 19.9967 15.2392 19.9289 15.3008 19.8593C15.3588 19.7937 15.414 19.7273 15.468 19.6593C15.514 19.6005 15.5588 19.5393 15.6016 19.4793C15.6632 19.3921 15.7216 19.3025 15.7756 19.2113C15.8036 19.1649 15.8308 19.1181 15.8556 19.0705C15.9178 18.9577 15.9744 18.8424 16.0256 18.7245C16.0328 18.7041 16.0432 18.6877 16.0508 18.6697L17.4868 20.3813ZM23.2 16.5537H16.3796C16.1625 14.1347 14.0255 12.3497 11.6066 12.5668C9.48835 12.7569 7.8097 14.4355 7.6196 16.5537H0.8V1.35371H23.2V16.5537Z' fill='%237A61FF'/%3E%3Cpath d='M2 2.15371C1.7791 2.15371 1.6 2.33281 1.6 2.55371V4.15371H2.4V2.95371H3.6V2.15371H2Z' fill='%237A61FF'/%3E%3Cpath d='M22 2.15371H20.4V2.95371H21.6V4.15371H22.4V2.55371C22.4 2.33276 22.2209 2.15371 22 2.15371Z' fill='%237A61FF'/%3E%3Cpath d='M21.6 13.7537V14.9537H20.4V15.7537H22C22.2209 15.7537 22.4 15.5746 22.4 15.3537V13.7537H21.6Z' fill='%237A61FF'/%3E%3Cpath d='M2.4 14.9537V13.7537H1.6V15.3537C1.6 15.5746 1.7791 15.7537 2 15.7537H3.6V14.9537H2.4Z' fill='%237A61FF'/%3E%3Cpath d='M16.8 4.95371H7.2V5.75371H16.8V4.95371Z' fill='%237A61FF'/%3E%3Cpath d='M19.2 7.35371H4.8V8.15371H19.2V7.35371Z' fill='%237A61FF'/%3E%3Cpath d='M12 14.1537C10.4536 14.1537 9.2 15.4073 9.2 16.9537C9.20175 18.4994 10.4544 19.752 12 19.7537C13.5464 19.7537 14.8 18.5001 14.8 16.9537C14.8 15.4073 13.5464 14.1537 12 14.1537ZM12 18.9537C10.8955 18.9537 10 18.0583 10 16.9537C10.0013 15.8497 10.896 14.955 12 14.9537C13.1046 14.9537 14 15.8492 14 16.9537C14 18.0583 13.1046 18.9537 12 18.9537Z' fill='%237A61FF'/%3E%3C/svg%3E%0A");
+}
+
+.io-course-programs__diploma:active {
+    background-color: var(--io-purple-main);
+    color: var(--io-white-main);
+}
+
+.io-course-programs__diploma:active::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.6 0.553711H0.4C0.1791 0.553711 0 0.732811 0 0.953711V16.9537C0 17.1746 0.1791 17.3537 0.4 17.3537H7.6228C7.6348 17.4869 7.6544 17.6181 7.678 17.7481L5.484 20.3629C5.3419 20.5321 5.36385 20.7844 5.533 20.9265C5.58065 20.9665 5.63705 20.9949 5.6976 21.0093L8.1128 21.5861L9.1004 23.8661C9.1882 24.0688 9.4237 24.162 9.6264 24.0742C9.6835 24.0495 9.734 24.0118 9.774 23.9641L11.9644 21.3537C11.9764 21.3537 11.988 21.3537 12 21.3537C12.012 21.3537 12.0236 21.3537 12.0356 21.3537L14.226 23.9641C14.3679 24.1334 14.6202 24.1556 14.7895 24.0137C14.8372 23.9738 14.8749 23.9232 14.8996 23.8661L15.8872 21.5861L18.3024 21.0093C18.5173 20.9581 18.65 20.7424 18.5989 20.5275C18.5844 20.467 18.5561 20.4106 18.516 20.3629L16.322 17.7481C16.3456 17.6181 16.3652 17.4869 16.3772 17.3537H23.6C23.8209 17.3537 24 17.1746 24 16.9537V0.953711C24 0.732761 23.8209 0.553711 23.6 0.553711ZM9.5772 22.9537L8.7672 21.0857C8.71715 20.9702 8.61565 20.885 8.4932 20.8557L6.5132 20.3825L7.9492 18.6709C7.9568 18.6885 7.9668 18.7045 7.9744 18.7221C8.0264 18.8421 8.0828 18.9561 8.1452 19.0693C8.1708 19.1165 8.198 19.1629 8.2252 19.2089C8.28015 19.3004 8.33825 19.39 8.3996 19.4777C8.4424 19.5389 8.4872 19.5977 8.5332 19.6577C8.5868 19.7257 8.642 19.7921 8.7 19.8577C8.758 19.9233 8.8256 19.9957 8.8924 20.0621C8.9416 20.1113 8.9924 20.1589 9.0444 20.2057C9.0876 20.2457 9.1264 20.2877 9.1716 20.3257C9.2168 20.3637 9.2592 20.3893 9.3024 20.4229C9.322 20.4381 9.3388 20.4557 9.3588 20.4705C9.3948 20.4977 9.4328 20.5213 9.4696 20.5473C9.5272 20.5873 9.584 20.6305 9.6436 20.6673C9.7572 20.7401 9.8744 20.8065 9.9932 20.8673C10.0388 20.8905 10.0852 20.9117 10.1316 20.9333C10.2383 20.9835 10.3456 21.0291 10.4536 21.0701C10.4848 21.0817 10.5156 21.0949 10.5468 21.1057C10.6983 21.159 10.8527 21.2037 11.0092 21.2397L11.0136 21.2409L9.5772 22.9537ZM12.7512 20.4689C12.5677 20.5077 12.3816 20.5322 12.1944 20.5421H12.1892C12.126 20.5453 12.0628 20.5497 11.9992 20.5497C11.9356 20.5497 11.8724 20.5453 11.8092 20.5421H11.804C11.6172 20.5321 11.4314 20.5078 11.2484 20.4693L11.2148 20.4625C11.1436 20.4469 11.0732 20.4277 11.0036 20.4077C10.9744 20.3993 10.9448 20.3917 10.916 20.3825C10.866 20.3669 10.8168 20.3485 10.7676 20.3309C10.7184 20.3133 10.6716 20.2961 10.6244 20.2765C10.5952 20.2641 10.5664 20.2509 10.5376 20.2365C10.472 20.2069 10.4068 20.1769 10.3432 20.1437L10.3112 20.1261C10.1463 20.0379 9.9885 19.9371 9.8392 19.8245C9.756 19.7625 9.6792 19.6941 9.6036 19.6265C9.5142 19.5468 9.42885 19.4625 9.348 19.3741C9.316 19.3397 9.2816 19.3069 9.2512 19.2713C9.1395 19.1399 9.0376 19.0005 8.9464 18.8541C8.9328 18.8325 8.9212 18.8097 8.9064 18.7873C8.82135 18.6452 8.7465 18.4972 8.6824 18.3445C8.6768 18.3309 8.6704 18.3173 8.6652 18.3045C8.59435 18.1295 8.53735 17.9493 8.4948 17.7653C8.4948 17.7581 8.4892 17.7525 8.4872 17.7453C8.4291 17.4855 8.39985 17.22 8.4 16.9537C8.3988 14.9655 10.0096 13.3528 11.9978 13.3515C13.986 13.3503 15.5988 14.9611 15.6 16.9493C15.6002 17.2186 15.5701 17.4871 15.5104 17.7497C15.5084 17.7565 15.5044 17.7625 15.5028 17.7693C15.4603 17.953 15.4035 18.1332 15.3328 18.3081C15.3272 18.3221 15.3208 18.3361 15.3148 18.3481C15.2509 18.4998 15.1763 18.6469 15.0916 18.7881C15.0784 18.8105 15.0664 18.8341 15.0516 18.8565C14.9604 19.0026 14.8587 19.1419 14.7472 19.2733C14.7172 19.3085 14.6832 19.3405 14.6516 19.3749C14.5697 19.4641 14.4832 19.5491 14.3928 19.6297C14.3168 19.6973 14.2412 19.7657 14.1584 19.8273C14.0756 19.8889 14.0016 19.9409 13.9208 19.9925L13.916 19.9953C13.8436 20.0413 13.7696 20.0837 13.6944 20.1237C13.6796 20.1317 13.6652 20.1401 13.6504 20.1477C13.59 20.1793 13.5304 20.2077 13.4668 20.2353C13.4348 20.2497 13.4032 20.2645 13.3708 20.2777C13.326 20.2965 13.2804 20.3129 13.2348 20.3293C13.1892 20.3457 13.1328 20.3669 13.0808 20.3829C13.0532 20.3917 13.0252 20.3993 12.9972 20.4073C12.9264 20.4273 12.8552 20.4473 12.7832 20.4625L12.7512 20.4689ZM17.4868 20.3813L15.5068 20.8545C15.3843 20.8838 15.2829 20.969 15.2328 21.0845L14.4228 22.9537L12.9864 21.2421H12.99C13.1471 21.2062 13.302 21.1614 13.454 21.1077C13.484 21.0973 13.5128 21.0849 13.5428 21.0741C13.6544 21.0317 13.7644 20.9853 13.8724 20.9337C13.9164 20.9133 13.9604 20.8937 14.0036 20.8713C14.1236 20.8089 14.2436 20.7413 14.3588 20.6673C14.4144 20.6321 14.4676 20.5925 14.5216 20.5545C14.5616 20.5269 14.6016 20.5017 14.6416 20.4725C14.6628 20.4565 14.6816 20.4377 14.7024 20.4213C14.7424 20.3885 14.7888 20.3609 14.8296 20.3265C14.8704 20.2921 14.912 20.2465 14.9544 20.2089C15.0072 20.1609 15.0592 20.1125 15.1096 20.0625C15.1754 19.9967 15.2392 19.9289 15.3008 19.8593C15.3588 19.7937 15.414 19.7273 15.468 19.6593C15.514 19.6005 15.5588 19.5393 15.6016 19.4793C15.6632 19.3921 15.7216 19.3025 15.7756 19.2113C15.8036 19.1649 15.8308 19.1181 15.8556 19.0705C15.9178 18.9577 15.9744 18.8424 16.0256 18.7245C16.0328 18.7041 16.0432 18.6877 16.0508 18.6697L17.4868 20.3813ZM23.2 16.5537H16.3796C16.1625 14.1347 14.0255 12.3497 11.6066 12.5668C9.48835 12.7569 7.8097 14.4355 7.6196 16.5537H0.8V1.35371H23.2V16.5537Z' fill='%23FFFFFF'/%3E%3Cpath d='M2 2.15371C1.7791 2.15371 1.6 2.33281 1.6 2.55371V4.15371H2.4V2.95371H3.6V2.15371H2Z' fill='%23FFFFFF'/%3E%3Cpath d='M22 2.15371H20.4V2.95371H21.6V4.15371H22.4V2.55371C22.4 2.33276 22.2209 2.15371 22 2.15371Z' fill='%23FFFFFF'/%3E%3Cpath d='M21.6 13.7537V14.9537H20.4V15.7537H22C22.2209 15.7537 22.4 15.5746 22.4 15.3537V13.7537H21.6Z' fill='%23FFFFFF'/%3E%3Cpath d='M2.4 14.9537V13.7537H1.6V15.3537C1.6 15.5746 1.7791 15.7537 2 15.7537H3.6V14.9537H2.4Z' fill='%23FFFFFF'/%3E%3Cpath d='M16.8 4.95371H7.2V5.75371H16.8V4.95371Z' fill='%23FFFFFF'/%3E%3Cpath d='M19.2 7.35371H4.8V8.15371H19.2V7.35371Z' fill='%23FFFFFF'/%3E%3Cpath d='M12 14.1537C10.4536 14.1537 9.2 15.4073 9.2 16.9537C9.20175 18.4994 10.4544 19.752 12 19.7537C13.5464 19.7537 14.8 18.5001 14.8 16.9537C14.8 15.4073 13.5464 14.1537 12 14.1537ZM12 18.9537C10.8955 18.9537 10 18.0583 10 16.9537C10.0013 15.8497 10.896 14.955 12 14.9537C13.1046 14.9537 14 15.8492 14 16.9537C14 18.0583 13.1046 18.9537 12 18.9537Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A");
+}
+
+/* Course Feedback */
+.io-course-feedback {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+    padding-top: var(--io-size-100);
+}
+
+/* FAQ Course */
+.io-course-faq {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+    padding-top: var(--io-size-100);
+}
+
+.io-course-faq__item {
+    border-radius: var(--io-size-050);
+    padding: var(--io-size-075);
+}
+
+/* Blog Course */
+.io-course-blog {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+    padding-top: var(--io-size-100);
+}
+
+/* Курсы - Контент */
+.io-course-accordion__target {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 185px var(--io-size-100) 1fr;
+    grid-template-columns: 185px 1fr;
+    gap: var(--io-size-050) var(--io-size-100);
+}
+
+.io-course-accordion__program img {
+    height: 24px;
+    width: auto;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.io-course-accordion__program span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.io-course-accordion__diploma {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    gap: 16px;
+}
+
+.io-course-accordion__diploma>a {
+    max-width: 223px;
+    height: auto;
+    transition: var(--io-transition);
+}
+
+.io-course-accordion__diploma>a:hover {
+    transform: scale(1.1);
+}
+
+.io-course-accordion__diploma>a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Course Schedule */
+.io-course-schedule {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr var(--io-size-150) 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--io-size-150);
+    padding-top: var(--io-size-100);
+}
+
+.io-course-schedule>* {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.io-course-schedule__data {
+    gap: var(--io-size-075);
+}
+
+.io-course-schedule__data .io-social {
+    margin-top: var(--io-size-050);
+}
+
+.io-course-schedule__data-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-125);
+}
+
+.io-course-schedule__data-inner p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.io-course-schedule__data-inner .io-day {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: var(--io-size-100);
+}
+
+.io-course-schedule__data-inner .io-day>* {
+    aspect-ratio: 1 / 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--io-green-main);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--io-green-secondary);
+    border-radius: var(--io-size-025);
+}
+
+.io-course-schedule__button {
+    margin-top: var(--io-size-125);
+    max-width: 280px;
+}
+
+.io-course-schedule__img {
+    width: 100%;
+    height: auto;
+}
+
+.io-course-schedule__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+/* Course Pricing */
+.io-course-pricing {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-100);
+}
+
+.io-course-pricing__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    /* gap: var(--io-size-075); */
+}
+
+.io-course-pricing__heading img {
+    width: var(--io-size-150);
+    height: auto;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    margin-right: var(--io-size-075);
+}

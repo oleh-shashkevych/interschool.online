@@ -1,0 +1,121 @@
+/* Check text */
+.io-check>* {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* gap: var(--io-size-100); */
+    color: var(--io-black-main);
+    font-size: var(--io-size-100);
+    font-weight: 400;
+}
+
+.io-check>*::before {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    content: '';
+    width: var(--io-size-100);
+    height: var(--io-size-100);
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7061 0.331839C16.0674 0.647985 16.1002 1.19875 15.7788 1.55543L6.73218 11.5967C6.40913 11.9552 5.85447 11.978 5.50309 11.6473L0.268105 6.71896C-0.0583653 6.41161 -0.0896166 5.89947 0.190485 5.54935C0.499557 5.16301 1.07512 5.10984 1.44295 5.44068L5.50459 9.09405C5.85757 9.41155 6.401 9.38316 6.71901 9.03064L14.5005 0.403016C14.8153 0.0538809 15.3523 0.0222334 15.7061 0.331839Z' fill='%230F9403'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: var(--io-size-100);
+}
+
+.io-check--purple>*::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7061 0.331839C16.0674 0.647985 16.1002 1.19875 15.7788 1.55543L6.73218 11.5967C6.40913 11.9552 5.85447 11.978 5.50309 11.6473L0.268105 6.71896C-0.0583653 6.41161 -0.0896166 5.89947 0.190485 5.54935C0.499557 5.16301 1.07512 5.10984 1.44295 5.44068L5.50459 9.09405C5.85757 9.41155 6.401 9.38316 6.71901 9.03064L14.5005 0.403016C14.8153 0.0538809 15.3523 0.0222334 15.7061 0.331839Z' fill='%237A61FF'/%3E%3C/svg%3E%0A");
+}
+
+.io-check--start>* {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.io-check--start>*::before {
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+/* Heart text */
+.io-heart>* {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    /* gap: var(--io-size-075); */
+    color: var(--io-black-main);
+    font-size: var(--io-size-100);
+    font-weight: 400;
+}
+
+.io-heart>*::before {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    content: '';
+    width: var(--io-size-075);
+    height: var(--io-size-075);
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_789_2563)'%3E%3Cpath d='M11.048 1.70105C10.4268 1.02731 9.57449 0.65625 8.6478 0.65625C7.95511 0.65625 7.32074 0.875244 6.76227 1.3071C6.48047 1.52509 6.22513 1.79178 6 2.10306C5.77496 1.79187 5.51953 1.52509 5.23764 1.3071C4.67926 0.875244 4.04489 0.65625 3.3522 0.65625C2.42551 0.65625 1.57306 1.02731 0.951874 1.70105C0.338104 2.36691 0 3.27658 0 4.2626C0 5.27747 0.378204 6.20645 1.19019 7.18625C1.91656 8.06268 2.96054 8.95239 4.16949 9.98264C4.58231 10.3345 5.05023 10.7333 5.5361 11.1581C5.66446 11.2705 5.82916 11.3324 6 11.3324C6.17075 11.3324 6.33554 11.2705 6.46371 11.1583C6.94958 10.7334 7.41779 10.3344 7.83078 9.98236C9.03955 8.9523 10.0835 8.06268 10.8099 7.18616C11.6219 6.20645 12 5.27747 12 4.26251C12 3.27658 11.6619 2.36691 11.048 1.70105Z' fill='%23FC5588'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_789_2563'%3E%3Crect width='12' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+    margin-right: var(--io-size-075);
+}
+
+/* Warning text */
+.io-warning>* {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* gap: var(--io-size-100); */
+    color: var(--io-orange-main);
+    font-size: var(--io-size-100);
+    font-weight: 400;
+}
+
+.io-warning>*::before {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    content: '';
+    width: var(--io-size-100);
+    height: var(--io-size-100);
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='15' viewBox='0 0 17 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1802 11.4033L10.5747 1.69415C9.6591 0.0902319 7.34379 0.0902319 6.4315 1.69415L0.822735 11.4033C-0.0928472 13.0072 1.04669 14.9997 2.89432 14.9997H14.0888C15.9364 14.9997 17.0957 12.9874 16.1802 11.4033ZM8.4998 12.8458C8.01236 12.8458 7.60727 12.4407 7.60727 11.9533C7.60727 11.4659 8.01236 11.0608 8.4998 11.0608C8.98723 11.0608 9.39233 11.4659 9.37256 11.9763C9.39562 12.4407 8.96747 12.8458 8.4998 12.8458ZM9.31328 7.07567C9.27376 7.76729 9.23095 8.45563 9.19142 9.14725C9.17166 9.37121 9.17166 9.5754 9.17166 9.79607C9.1519 10.1616 8.86537 10.4449 8.4998 10.4449C8.13422 10.4449 7.85099 10.1814 7.82793 9.81583C7.76865 8.73886 7.70607 7.68166 7.64679 6.6047C7.62703 6.32146 7.60727 6.03493 7.58421 5.75169C7.58421 5.28402 7.84769 4.89869 8.27584 4.77683C8.70399 4.67473 9.12885 4.87893 9.31328 5.28402C9.37586 5.42564 9.39562 5.56726 9.39562 5.73193C9.37586 6.18314 9.33304 6.63105 9.31328 7.07567Z' fill='%23F08A16'/%3E%3C/svg%3E ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: var(--io-size-100) ;
+}
+
+.io-warning--start>* {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.io-warning--start>*::before {
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.io-warning--large>* {
+    /* gap: var(--io-size-050); */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.io-warning--large>*::before {
+    margin-right: var(--io-size-050) ;
+}

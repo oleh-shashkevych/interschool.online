@@ -1,0 +1,123 @@
+.io-montessori__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-400);
+    padding-left: var(--io-size-600);
+    padding-right: var(--io-size-600);
+    margin-bottom: var(--io-size-300);
+}
+
+.io-montessori__data-wrapper {
+    max-width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: var(--io-size-125);
+}
+
+.io-montessori__quote {
+    color: var(--io-pink-main);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 0;
+    -webkit-transform: translateY(52px);
+    -ms-transform: translateY(52px);
+    transform: translateY(52px);
+}
+
+.io-montessori__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-125);
+}
+
+.io-montessori__text {
+    font-size: 20px;
+}
+
+.io-montessori__img {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 280px;
+    height: auto;
+}
+
+.io-montessori__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.io-montessori__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-200);
+    margin-bottom: var(--io-size-300);
+}
+
+.io-montessori__methods {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-125);
+}
+
+.io-montessori__methods-title {
+    font-size: 24px;
+}
+
+.io-montessori__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr var(--io-size-125) 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--io-size-125);
+}
+
+.io-montessori__item {
+    min-height: 220px;
+    padding-top: var(--io-size-100);
+    padding-bottom: var(--io-size-100);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-075);
+}
+
+.io-montessori__item-number {
+    display: inline-block;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}

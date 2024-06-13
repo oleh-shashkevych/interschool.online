@@ -1,0 +1,124 @@
+.io-contacts__block {
+    padding: var(--io-size-400);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 120px 3fr;
+    grid-template-columns: 2fr 3fr;
+    gap: 120px;
+}
+
+.io-contacts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.io-contacts__info-text {
+    color: var(--io-black-main);
+    font-size: var(--io-size-200);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: var(--io-size-200);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.io-contacts__info-time {
+    margin-top: var(--io-size-150);
+    color: var(--io-pink-main);
+    font-size: var(--io-size-550);
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.io-contacts__info-bottom>a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.io-contacts__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: var(--io-size-125);
+}
+
+.io-contacts__data-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-200);
+}
+
+.io-contacts__data-item .io-heading-2 {
+    font-size: 28px;
+}
+
+.io-contacts__data-item:last-child {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.io-contacts__data-item p {
+    line-height: 1.75;
+}
+
+.io-contacts__data-heading {
+    color: var(--io-black-main);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.io-contacts__data-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-200);
+}
+
+.io-contacts__phones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto var(--io-size-100) auto;
+    grid-template-columns: auto auto;
+    gap: var(--io-size-100);
+}
+
+.io-contacts__link {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.io-contacts__link:hover {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.io-contacts__country {
+    color: var(--io-black-main-op-60);
+}

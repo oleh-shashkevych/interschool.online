@@ -1,0 +1,96 @@
+.io-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-100);
+}
+
+.io-social a {
+    display: block;
+    line-height: 1;
+    border-radius: 50%;
+    background: transparent;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-social a.io-social__telegram img,
+.io-social a.io-social__youtube img,
+.io-social a.io-social__facebook img,
+.io-social a.io-social__viber img,
+.io-social a.io-social__whatsapp img,
+.io-social a.io-social__instagram img {
+    width: 36px;
+    height: auto;
+}
+
+.io-social a:hover {
+    background: var(--io-white-main);
+    -webkit-box-shadow: var(--io-box-shadow-large);
+    box-shadow: var(--io-box-shadow-large);
+}
+
+.io-social a.d-none:hover {
+    background: transparent;
+    box-shadow: unset;
+}
+
+.io-social a:active {
+    background: var(--io-purple-secondary);
+}
+
+.io-social a svg {
+    width: var(--io-size-225);
+    height: var(--io-size-225);
+}
+
+.io-social a svg path,
+.io-social a svg circle {
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-social a:not(.d-none):hover svg path {
+    fill: var(--io-purple-main);
+}
+
+.io-social a:not(.d-none):hover svg circle {
+    stroke: var(--io-purple-main);
+}
+
+.io-social a.d-none:hover svg path {
+    stroke: var(--io-purple-main);
+}
+
+.io-social a.io-social__copy {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-050);
+    padding: var(--io-size-050) var(--io-size-075);
+    border: 1px solid var(--io-white-secondary);
+    border-radius: var(--io-size-025);
+    text-decoration: none;
+}
+
+.io-social a.io-social__copy span {
+    font-size: var(--io-size-100);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--io-black-main);
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-social a.io-social__copy:hover span {
+    color: var(--io-purple-main);
+}

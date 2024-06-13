@@ -1,0 +1,25 @@
+.io-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-150);
+    margin: 0 0 var(--io-size-150);
+    padding: var(--io-size-500) 0 var(--io-size-150);
+    border-bottom: 1px solid var(--io-white-secondary);
+}
+
+.io-filter__heading {
+    font-size: 28px;
+}
+
+.io-filter__form {
+    gap: var(--io-size-100);
+}
+
+.io-filter__empty {
+    height: var(--io-size-300);
+}

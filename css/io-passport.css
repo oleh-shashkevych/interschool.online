@@ -1,0 +1,354 @@
+.io-course-passport__popular {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-025);
+    padding: var(--io-size-025) var(--io-size-100) var(--io-size-025) var(--io-size-050);
+    border-radius: 0px var(--io-size-075);
+    background-color: var(--io-orange-main);
+    color: var(--io-white-main);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.io-course-passport__popular::before {
+    content: '';
+    width: var(--io-size-100);
+    height: var(--io-size-100);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M10.8305 7.52896L8.79952 6.95896L9.87302 3.13546C9.93802 2.90246 9.82802 2.65696 9.61102 2.55096C9.39352 2.44496 9.13202 2.50946 8.98902 2.70396L4.90152 8.26146C4.80452 8.39396 4.77802 8.56496 4.83152 8.72046C4.88452 8.87596 5.01102 8.99496 5.16902 9.03946L7.20002 9.60946L6.00502 13.865C5.93902 14.1 6.05202 14.3475 6.27202 14.452C6.34152 14.4845 6.41452 14.5 6.48652 14.5C6.64502 14.5 6.79952 14.4245 6.89602 14.2875L11.1045 8.29796C11.198 8.16496 11.2205 7.99546 11.1665 7.84246C11.1125 7.68946 10.987 7.57296 10.8305 7.52896Z' fill='%23FFD29E'/%3E%3C/svg%3E");
+}
+
+.io-course-passport__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: var(--io-size-175);
+    margin-bottom: var(--io-size-200);
+    padding-bottom: var(--io-size-200);
+    border-bottom: 1px solid var(--io-white-secondary);
+}
+
+.io-course-passport__header-title {
+    color: var(--io-pink-main);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -0.225px;
+}
+
+.io-course-passport__header-status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-050);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--io-green-main);
+    transform: translateY(2px);
+    padding-top: 2px;
+}
+
+.io-course-passport__header-status::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: var(--io-green-main);
+    border-radius: 50%;
+}
+
+.io-course-passport__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 44px;
+    width: 100%;
+    margin-bottom: var(--io-size-100);
+}
+
+.io-course-passport__payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    /* gap: var(--io-size-100); */
+    margin-bottom: var(--io-size-300);
+}
+
+.io-course-passport__payment>*:not(:last-child) {
+    margin-right: var(--io-size-100);
+}
+
+.io-course-passport__payment-img {
+    width: var(--io-size-150);
+    height: var(--io-size-150);
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.io-course-passport__payment-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.io-course-passport__payment-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+}
+
+.io-course-passport__payment-info-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.io-course-passport__payment-info-data-name {
+    font-size: var(--io-size-100);
+    font-weight: 600;
+    line-height: var(--io-size-150);
+}
+
+.io-course-passport__payment-info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: var(--io-size-150);
+    color: var(--io-purple-main);
+    text-align: end;
+}
+
+.io-course-passport__payment-info-data-minimum,
+.io-course-passport__payment-info-data-sale {
+    color: var(--io-black-main);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.io-course-passport__payment-info-data-sale:hover {
+    color: var(--io-black-main);
+}
+
+.io-course-passport__payment-info-data-sale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: var(--io-size-025);
+}
+
+.io-course-passport__payment-info-data-sale::after {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64778 0.5C3.78229 0.5 0.648071 3.63422 0.648071 7.4997C0.648071 11.3652 3.78229 14.5 7.64778 14.5C11.5133 14.5 14.6481 11.3652 14.6481 7.4997C14.6481 3.63422 11.5133 0.5 7.64778 0.5ZM9.10496 11.3486C8.74466 11.4908 8.45785 11.5987 8.24274 11.6733C8.02822 11.748 7.77874 11.7853 7.49489 11.7853C7.05874 11.7853 6.71918 11.6787 6.4774 11.4659C6.23563 11.2532 6.11533 10.9836 6.11533 10.6559C6.11533 10.5284 6.12422 10.3981 6.142 10.2653C6.16037 10.1326 6.1894 9.98326 6.22911 9.81556L6.68007 8.22267C6.71977 8.06978 6.75415 7.92459 6.7814 7.78948C6.80866 7.65319 6.8217 7.52815 6.8217 7.41437C6.8217 7.2117 6.77963 7.06948 6.69607 6.98948C6.61133 6.90948 6.45192 6.87037 6.21429 6.87037C6.09815 6.87037 5.97844 6.88756 5.85578 6.9237C5.73429 6.96104 5.62881 6.99481 5.54229 7.028L5.6614 6.53733C5.95652 6.41704 6.23918 6.31393 6.50881 6.22859C6.77844 6.14207 7.03326 6.09941 7.27326 6.09941C7.70644 6.09941 8.04066 6.20489 8.27592 6.41348C8.51 6.62267 8.62792 6.89467 8.62792 7.22889C8.62792 7.29822 8.61963 7.4203 8.60363 7.59452C8.58763 7.76933 8.5574 7.92874 8.51355 8.07511L8.06496 9.66326C8.02822 9.79067 7.99563 9.93644 7.966 10.0994C7.93696 10.2624 7.92274 10.3868 7.92274 10.4704C7.92274 10.6813 7.96955 10.8253 8.06437 10.9018C8.158 10.9782 8.32215 11.0167 8.55444 11.0167C8.66407 11.0167 8.78674 10.9972 8.9254 10.9593C9.06289 10.9213 9.16244 10.8876 9.22526 10.8585L9.10496 11.3486ZM9.02555 4.90237C8.81637 5.09674 8.56452 5.19393 8.27 5.19393C7.97607 5.19393 7.72244 5.09674 7.51148 4.90237C7.3017 4.708 7.19563 4.47156 7.19563 4.19541C7.19563 3.91985 7.30229 3.68281 7.51148 3.48667C7.72244 3.28993 7.97607 3.19215 8.27 3.19215C8.56452 3.19215 8.81696 3.28993 9.02555 3.48667C9.23474 3.68281 9.33963 3.91985 9.33963 4.19541C9.33963 4.47215 9.23474 4.708 9.02555 4.90237Z' fill='%237A61FF'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.io-course-passport__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    /* gap: var(--io-size-100); */
+}
+
+.io-course-passport__bottom > *:not(:last-child) {
+    margin-right: var(--io-size-100);
+}
+
+.io-course-passport__bottom-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 61px;
+    height: 61px;
+    padding: 10px;
+    border-radius: var(--io-size-050);
+    background: var(--io-pink-secondary);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--io-pink-main);
+}
+
+.io-course-passport-mobile,
+.io-demo-wrapper-mobile {
+    display: none;
+}
+
+.io-demo-wrapper-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--io-size-100) 0;
+    background-color: var(--io-background);
+    z-index: 198;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+    /* border-top: 2px solid var(--io-purple-main); */
+    -webkit-box-shadow: 0px -10px 14px 0px rgba(122, 97, 255, 0.25);
+    box-shadow: 0px -10px 14px 0px rgba(122, 97, 255, 0.25);
+}
+
+.io-demo-inner-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    /* gap: var(--io-size-100); */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 420px;
+}
+
+.io-demo-inner-all > *:not(:last-child) {
+    margin-right: var(--io-size-100);
+}
+
+.io-demo-inner-all>*:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.io-demo-inner-all>*:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.io-demo-inner-all>*:nth-child(3) {
+    display: none;
+}
+
+.io-demo-inner-all.bottom>*:nth-child(1) {
+    display: none;
+}
+
+.io-demo-inner-all.bottom>*:nth-child(2) {
+    display: none;
+}
+
+.io-demo-inner-all.bottom>*:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.io-demo-wrapper-all .io-demo-inner-all-price {
+    display: none;
+}
+
+.io-demo-wrapper-all.alter .io-demo-inner-all {
+    display: none;
+}
+
+.io-demo-wrapper-all.alter .io-demo-inner-all-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: var(--io-size-200);
+}
+
+.io-demo-wrapper-all .io-button__large {
+    line-height: 1;
+    padding: 12px;
+}
+
+.io-demo-wrapper-all .io-course-passport__bottom-price {
+    height: 42px;
+    width: 42px;
+    font-size: 24px;
+    line-height: 1;
+}

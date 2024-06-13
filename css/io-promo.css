@@ -1,0 +1,129 @@
+.io-promo {
+    position: relative;
+    margin-bottom: var(--io-size-075);
+}
+
+.io-promo>* {
+    z-index: 1;
+}
+
+.io-promo::before {
+    content: '';
+    width: calc(100% + var(--io-size-150));
+    height: calc(100% + var(--io-size-100));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: var(--io-size-025);
+    background-color: var(--io-grey-main);
+}
+
+.io-promo__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: var(--io-size-050);
+}
+
+.io-promo__inner input {
+    width: auto;
+    max-width: 158px;
+    height: 32px;
+    font-size: 14px;
+    display: none;
+}
+
+.io-promo__inner.active input {
+    display: block;
+}
+
+.io-promo__inner.add input {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    padding: 0;
+    text-align: right;
+    color: var(--io-black-main-op-60);
+    pointer-events: none;
+}
+
+.io-promo__button {
+    position: relative;
+    display: block;
+    width: var(--io-size-200);
+    height: var(--io-size-200);
+    border-radius: var(--io-size-025);
+    background-color: var(--io-purple-secondary);
+    border: 1px solid transparent;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-promo__button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: var(--io-size-100);
+    height: var(--io-size-100);
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.9999 8.99997H11V0.999936C11 0.448058 10.552 0 9.99991 0C9.44803 0 8.99997 0.448058 8.99997 0.999936V8.99997H0.999936C0.448058 8.99997 0 9.44803 0 9.99991C0 10.552 0.448058 11 0.999936 11H8.99997V18.9999C8.99997 19.5519 9.44803 20 9.99991 20C10.552 20 11 19.5519 11 18.9999V11H18.9999C19.5519 11 20 10.552 20 9.99991C20 9.44803 19.5519 8.99997 18.9999 8.99997Z' fill='%237A61FF'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-size: contain;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-promo__inner.active .io-promo__button::after {
+    -webkit-transform: translate(-50%, -50%) rotate(135deg);
+    -ms-transform: translate(-50%, -50%) rotate(135deg);
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.io-promo__check {
+    display: none;
+    width: var(--io-size-200);
+    height: var(--io-size-200);
+    border-radius: var(--io-size-025);
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7061 0.832083C16.0674 1.14823 16.1002 1.69899 15.7788 2.05567L6.73218 12.0969C6.40913 12.4555 5.85447 12.4783 5.50309 12.1475L0.268105 7.2192C-0.0583653 6.91185 -0.0896166 6.39971 0.190485 6.0496C0.499557 5.66326 1.07512 5.61008 1.44295 5.94092L5.50459 9.59429C5.85757 9.9118 6.401 9.8834 6.71901 9.53088L14.5005 0.90326C14.8153 0.554125 15.3523 0.522478 15.7061 0.832083Z' fill='%230F9403'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-size: var(--io-size-100) var(--io-size-100);
+    background-repeat: no-repeat;
+    border: 1px solid var(--io-green-main);
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-promo__inner.active .io-promo__check {
+    display: block;
+}
+
+.io-promo__inner.add .io-promo__check {
+    display: none;
+}
+
+.io-promo__inner.error input {
+    border-color: #ee292d;
+    background-color: #fff3f3;
+    color: #ee292d;
+}
+
+.io-promo__inner.error input::placeholder {
+    color: #ee292d;
+}

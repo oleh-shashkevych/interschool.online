@@ -1,0 +1,58 @@
+.io-checkbox[type="checkbox"]:checked,
+.io-checkbox[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.io-checkbox[type="checkbox"]:checked+label,
+.io-checkbox[type="checkbox"]:not(:checked)+label {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    /* gap: 10px; */
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--io-black-main);
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-checkbox[type="checkbox"]:checked+label {
+    color: var(--io-black-main);
+}
+
+.io-checkbox[type="checkbox"]:checked+label:before,
+.io-checkbox[type="checkbox"]:not(:checked)+label:before {
+    display: inline-block;
+    content: '';
+    width: var(--io-size-125);
+    height: var(--io-size-125);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7061 0.331839C16.0674 0.647985 16.1002 1.19875 15.7788 1.55543L6.73218 11.5967C6.40913 11.9552 5.85447 11.978 5.50309 11.6473L0.268105 6.71896C-0.0583653 6.41161 -0.0896166 5.89947 0.190485 5.54935C0.499557 5.16301 1.07512 5.10984 1.44295 5.44068L5.50459 9.09405C5.85757 9.41155 6.401 9.38316 6.71901 9.03064L14.5005 0.403016C14.8153 0.0538809 15.3523 0.0222334 15.7061 0.331839Z' fill='%23#FBFAFF'/%3E%3C/svg%3E%0A");
+    background-color: var(--io-background);
+    border: 2px solid var(--io-white-secondary);
+    border-radius: 2px;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+    margin-right: 10px;
+}
+
+.io-checkbox[type="checkbox"]:checked+label:before {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7061 0.331839C16.0674 0.647985 16.1002 1.19875 15.7788 1.55543L6.73218 11.5967C6.40913 11.9552 5.85447 11.978 5.50309 11.6473L0.268105 6.71896C-0.0583653 6.41161 -0.0896166 5.89947 0.190485 5.54935C0.499557 5.16301 1.07512 5.10984 1.44295 5.44068L5.50459 9.09405C5.85757 9.41155 6.401 9.38316 6.71901 9.03064L14.5005 0.403016C14.8153 0.0538809 15.3523 0.0222334 15.7061 0.331839Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A");
+    background-color: var(--io-purple-main);
+    border: 1px solid var(--io-purple-main);
+}

@@ -1,0 +1,107 @@
+.io-news__sidebar {
+    -ms-grid-columns: 1fr 320px;
+    grid-template-columns: 1fr 320px;
+}
+
+.io-news__heading-wrapper {
+    margin: 0 0 var(--io-size-300);
+}
+
+.io-news__bottom-wrapper {
+    margin: var(--io-size-100) 0 0;
+}
+
+.io-news__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.io-news__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px var(--io-size-125) 1fr;
+    grid-template-columns: 200px 1fr;
+    gap: var(--io-size-125);
+    padding: var(--io-size-150) 0;
+    border-bottom: 1px solid var(--io-white-secondary);
+    text-decoration: none;
+}
+
+.io-news__item:first-child {
+    padding-top: 0;
+}
+
+.io-news__item-img {
+    position: relative;
+    width: 100%;
+    height: 144px;
+    overflow: hidden;
+    border-radius: var(--io-size-050);
+    opacity: 1;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-news__item-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.io-news__item-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--io-size-100);
+}
+
+.io-news__item-date {
+    display: block;
+    color: var(--io-black-main-op-60);
+    font-weight: 600;
+}
+
+.io-news__item-heading {
+    color: var(--io-black-main);
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-news__item-text {
+    color: var(--io-black-main);
+    font-weight: 500;
+}
+
+.io-news__item:hover .io-news__item-img {
+    opacity: .8;
+}
+
+.io-news__item:hover .io-news__item-heading {
+    color: var(--io-pink-main);
+}
+
+/* .io-news__item:first-child {
+    padding-top: 0;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--io-size-150);
+}
+
+.io-news__item:first-child .io-news__item-img {
+    height: 400px;
+}
+
+.io-news__item:first-child .io-news__item-heading {
+    font-size: 32px;
+} */

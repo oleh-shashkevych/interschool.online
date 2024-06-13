@@ -1,0 +1,79 @@
+.io-radio[type="radio"]:checked,
+.io-radio[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.io-radio[type="radio"]:checked+label,
+.io-radio[type="radio"]:not(:checked)+label {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* gap: 10px; */
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--io-black-main);
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-radio[type="radio"]:checked+label {
+    color: var(--io-purple-main);
+}
+
+.io-radio[type="radio"]:checked+label~p,
+.io-radio[type="radio"]:not(:checked)+label~p {
+    margin-top: 10px;
+    padding: var(--io-size-050) var(--io-size-125) var(--io-size-050) var(--io-size-100);
+    border-left: 1px solid var(--io-white-secondary);
+    background-color: var(--io-grey-main);
+    color: var(--io-black-main-op-60);
+    font-size: 14px;
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+}
+
+.io-radio[type="radio"]:checked+label~p {
+    color: var(--io-purple-main);
+    background-color: var(--io-purple-secondary);
+    border-left: 1px solid var(--io-purple-main);
+}
+
+.io-radio[type="radio"]:checked+label:before,
+.io-radio[type="radio"]:not(:checked)+label:before {
+    display: inline-block;
+    content: '';
+    width: var(--io-size-150);
+    height: var(--io-size-150);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12.5' r='11' fill='white' stroke='%23E0E0E0' stroke-width='2'/%3E%3C/svg%3E");
+    -webkit-transition: var(--io-transition);
+    -o-transition: var(--io-transition);
+    transition: var(--io-transition);
+    margin-right: 10px;
+}
+
+.io-radio[type="radio"]:checked+label:before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12.5' r='11' fill='white' stroke='%237A61FF' stroke-width='2'/%3E%3Ccircle cx='12' cy='12.5' r='8' fill='%237A61FF'/%3E%3C/svg%3E");
+}
+
+#ioGiftCourseCheck .io-radio[type="radio"]:checked+label,
+#ioGiftCourseCheck .io-radio[type="radio"]:not(:checked)+label {
+    padding: 0;
+    font-size: 16px;
+}
+
+#ioGiftCourseCheck .io-radio[type="radio"]:not(:checked)+label {
+    color: var(--io-black-main);
+}

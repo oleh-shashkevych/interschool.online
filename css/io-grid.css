@@ -1,0 +1,42 @@
+.io-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.io-grid-gap-025 {
+    gap: var(--io-size-025) !important;
+}
+
+.io-grid-gap-050 {
+    gap: var(--io-size-050) !important;
+}
+
+.io-grid-gap-075 {
+    gap: var(--io-size-075) !important;
+}
+
+.io-grid-gap-100 {
+    gap: var(--io-size-100) !important;
+}
+
+.io-grid-gap-125 {
+    gap: var(--io-size-125) !important;
+}
+
+.io-grid-gap-150 {
+    gap: var(--io-size-150) !important;
+}
+
+.io-grid-gap-175 {
+    gap: var(--io-size-175) !important;
+}
+
+.io-grid-gap-200 {
+    gap: var(--io-size-200) !important;
+}
+
+.io-grid-span-2 {
+    grid-column: span 2;
+}

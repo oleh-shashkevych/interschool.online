@@ -1,0 +1,193 @@
+/* Font Weights */
+.io-fw-thin {
+    font-weight: 100 !important;
+}
+
+.io-fw-extralight {
+    font-weight: 200 !important;
+}
+
+.io-fw-light {
+    font-weight: 300 !important;
+}
+
+.io-fw-regular {
+    font-weight: 400 !important;
+}
+
+.io-fw-medium {
+    font-weight: 500 !important;
+}
+
+.io-fw-semibold {
+    font-weight: 600 !important;
+}
+
+.io-fw-bold {
+    font-weight: 700 !important;
+}
+
+.io-fw-extrabold {
+    font-weight: 800 !important;
+}
+
+.io-fw-black {
+    font-weight: 900 !important;
+}
+
+/* Font Style */
+.io-fs-italic {
+    font-style: italic !important;
+}
+
+.io-fs-normal {
+    font-style: normal !important;
+}
+
+/* Font Family */
+.io-ff-yeseva {
+    font-family: 'Yeseva One', sans-serif !important;
+}
+
+.io-ff-nunito {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+/* Text Decoration */
+.io-td-none {
+    text-decoration: none !important;
+}
+
+.io-td-dashed {
+    -webkit-text-decoration: dashed !important;
+    text-decoration: dashed !important;
+}
+
+.io-td-underline {
+    text-decoration: underline !important;
+}
+
+/* Texts and Headings */
+.io-heading-1,
+.io-heading-1 * {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 89px;
+    font-weight: 400;
+}
+
+.io-heading-2,
+.io-heading-2 * {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.io-heading-3,
+.io-heading-3 * {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.io-subheading {
+    font-size: 18px;
+}
+
+.io-fs-20 {
+    font-size: 20px !important;
+}
+
+.io-fs-18 {
+    font-size: 18px !important;
+}
+
+.io-fs-16 {
+    font-size: 16px !important;
+}
+
+/* Text Wrapper */
+.io-text-wrapper h1,
+.io-text-wrapper h2,
+.io-text-wrapper h3,
+.io-text-wrapper h4,
+.io-text-wrapper h5 {
+    color: var(--io-pink-main);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: var(--io-size-200);
+    margin-bottom: var(--io-size-125);
+    line-height: 1.68;
+}
+
+.io-text-wrapper h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.68;
+}
+
+.io-text-wrapper p,
+.io-text-wrapper div,
+.io-text-wrapper q {
+    margin-bottom: var(--io-size-125);
+    line-height: 1.68;
+}
+
+.io-text-wrapper>*:first-child {
+    margin-top: 0;
+}
+
+.io-text-wrapper>*:last-child {
+    margin-bottom: 0;
+}
+
+.io-text-wrapper q {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: var(--io-size-125);
+    padding: var(--io-size-150) 0;
+    border-top: 1px solid var(--io-white-secondary);
+    border-bottom: 1px solid var(--io-white-secondary);
+}
+
+.io-text-wrapper q::before {
+    content: '“';
+    color: var(--io-pink-main);
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 0;
+    -webkit-transform: translateY(52px);
+    -ms-transform: translateY(52px);
+    transform: translateY(52px);
+}
+
+.io-text-wrapper q::after {
+    display: none;
+}
+
+.io-text-wrapper i {
+    line-height: 1.8;
+}
+
+.io-content {
+    font-size: var(--io-size-100);
+}
+
+.io-content__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* gap: var(--io-size-050); */
+}
+
+.io-content__list>*:not(:last-child) {
+    margin-bottom: var(--io-size-050);
+}
